@@ -1,4 +1,4 @@
-import { recentScores } from './printUI.js';
+import { getLocal, updateLocal } from './localStorage.js';
 
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
@@ -21,7 +21,7 @@ const createGame = async () => {
   return newGame;
 };
 
-const checkGame = () => {
+const checkGame = async () => {
   let game;
   if (localStorage) {
     game = localStorage.getItem('gameID');
@@ -29,26 +29,35 @@ const checkGame = () => {
   if (game === null) {
     createGame().then((result) => {
       game = result;
+      window.location.reload();
     });
   }
   return game;
 };
 
 const getScores = async (game) => {
-  const response = await fetch(`${url}/${game}/scores`);
-  const scores = await response.json();
-  console.log(scores);
-  recentScores(scores.result);
+  game = await game;
+  let scores = null;
+  if (game) {
+    const response = await fetch(`${url}/${game}/scores`);
+    scores = await response.json();
+    scores = scores.result;
+  }
+  localStorage.setItem('allScores', JSON.stringify(scores));
   return scores;
 };
 
 const addScores = async (game, user, score) => {
+  const data = JSON.stringify({
+    user,
+    score,
+  });
+  const allScores = getLocal();
+  allScores.unshift({ user, score });
+  updateLocal(allScores);
   await fetch(`${url}/${game}/scores`, {
     method: 'POST',
-    body: JSON.stringify({
-      user,
-      score,
-    }),
+    body: data,
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
