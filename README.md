@@ -1,3 +1,5 @@
+[![Linters](https://github.com/eapenzacharias/Leaderboard/actions/workflows/linters.yml/badge.svg)](https://github.com/eapenzacharias/Leaderboard/actions/workflows/linters.yml)
+
 # Leaderboard
 
 > Build a Leaderboard JavaScript application
