@@ -63,4 +63,5 @@ const addScores = async (game, user, score) => {
     },
   });
 };
+
 export { checkGame, getScores, addScores };
