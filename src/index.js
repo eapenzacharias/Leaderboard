@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/style.scss';
 import { createForm, recentScores } from './scripts/printUI.js';
+import { checkGame } from './scripts/gameManager.js';
 
 const scores = [
   {
@@ -21,5 +22,6 @@ const scores = [
   },
 ];
 
-recentScores(scores);
 createForm();
+checkGame();
+recentScores(scores);
