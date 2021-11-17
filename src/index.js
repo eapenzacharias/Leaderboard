@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/style.scss';
 import { createForm, recentScores } from './scripts/printUI.js';
-import { checkGame, getScores } from './scripts/gameManager.js';
+import { addScores, checkGame, getScores } from './scripts/gameManager.js';
 
 const scores = [
   {
@@ -24,5 +24,4 @@ const scores = [
 
 createForm();
 checkGame();
-recentScores(scores);
-console.log(`Here: ${getScores('UQ2vLaU6BCVL1qUR5Bjl')}`);
+getScores('2QfBSD9yjN2GQ8kmnx3a');

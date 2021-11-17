@@ -10,7 +10,7 @@ const recentScores = (scores) => {
     const position = createElement('th');
     position.innerHTML = count;
     const name = createElement('td');
-    name.innerHTML = e.name;
+    name.innerHTML = e.user;
     const score = createElement('td');
     score.innerHTML = e.score;
     row.appendChild(position);

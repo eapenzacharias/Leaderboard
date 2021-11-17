@@ -1,4 +1,4 @@
-import { result } from "lodash";
+import { recentScores } from './printUI.js';
 
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
@@ -29,7 +29,6 @@ const checkGame = () => {
   if (game === null) {
     createGame().then((result) => {
       game = result;
-      console.log(game);
     });
   }
   return game;
@@ -38,6 +37,21 @@ const checkGame = () => {
 const getScores = async (game) => {
   const response = await fetch(`${url}/${game}/scores`);
   const scores = await response.json();
+  console.log(scores);
+  recentScores(scores.result);
   return scores;
 };
-export { checkGame, getScores };
+
+const addScores = async (game, user, score) => {
+  await fetch(`${url}/${game}/scores`, {
+    method: 'POST',
+    body: JSON.stringify({
+      user,
+      score,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
+};
+export { checkGame, getScores, addScores };
