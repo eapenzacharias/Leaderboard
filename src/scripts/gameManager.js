@@ -34,4 +34,10 @@ const checkGame = () => {
   }
   return game;
 };
-export { checkGame };
+
+const getScores = async (game) => {
+  const response = await fetch(`${url}/${game}/scores`);
+  const scores = await response.json();
+  return scores;
+};
+export { checkGame, getScores };
