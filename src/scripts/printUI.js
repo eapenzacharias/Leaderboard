@@ -21,7 +21,7 @@ const recentScores = (scores) => {
   });
 };
 
-function createForm() {
+const createForm = () => {
   const form = `
   <form id="form-id">
     <div class="input-group mb-3">
@@ -34,6 +34,6 @@ function createForm() {
   </form>
   `;
   getElement('#form-div').innerHTML = form;
-}
+};
 
 export { recentScores, createForm };

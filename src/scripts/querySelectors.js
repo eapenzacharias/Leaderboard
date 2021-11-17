@@ -1,9 +1,5 @@
-function getElement(element) {
-  return document.querySelector(element);
-}
+const getElement = (element) => document.querySelector(element);
 
-function createElement(element) {
-  return document.createElement(element);
-}
+const createElement = (element) => document.createElement(element);
 
 export { getElement, createElement };
