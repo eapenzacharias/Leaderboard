@@ -1,4 +1,4 @@
-[![Linters](https://github.com/eapenzacharias/Leaderboard/actions/workflows/linters.yml/badge.svg)](https://github.com/eapenzacharias/Leaderboard/actions/workflows/linters.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c5d55814c3e279a16964/maintainability)](https://codeclimate.com/github/eapenzacharias/Leaderboard/maintainability)  [![Linters](https://github.com/eapenzacharias/Leaderboard/actions/workflows/linters.yml/badge.svg)](https://github.com/eapenzacharias/Leaderboard/actions/workflows/linters.yml)  [![CodeQL](https://github.com/eapenzacharias/Leaderboard/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/eapenzacharias/Leaderboard/actions/workflows/codeql-analysis.yml)  [![NodeJS with Webpack](https://github.com/eapenzacharias/Leaderboard/actions/workflows/webpack.yml/badge.svg?branch=main)](https://github.com/eapenzacharias/Leaderboard/actions/workflows/webpack.yml)
 
 # Leaderboard
 
