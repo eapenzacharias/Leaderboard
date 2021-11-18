@@ -4,10 +4,10 @@ import { createElement, getElement } from './querySelectors.js';
 
 const recentScores = async (scores) => {
   scores = await scores;
-  const table = getElement('#scores-data');
-  table.innerHTML = '';
   let count = 1;
-  if (scores) {
+  if (scores.length > 0) {
+    const table = getElement('#scores-data');
+    table.innerHTML = '';
     scores.forEach((e) => {
       const row = createElement('tr');
       row.scope = 'row';
