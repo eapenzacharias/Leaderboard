@@ -41,6 +41,11 @@ Run webpack dev server for development
  npm run build
  ```
  and deploy the files in the ```dist``` folder
+ 
+Auto-deploy to GH-Pages
+  ```
+ npm run deploy
+ ```
 
 ## Authors
 
