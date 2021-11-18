@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple example steps.
 - Clone the repository to your local machine.
 - npm install
 ```
-#### Development
+### Development
 Run webpack dev server for development
 ```
 - Clone the repository to your local machine.
@@ -36,13 +36,13 @@ Run webpack dev server for development
 ```
 
 ### Deployment
- run:
+ Manual Deployment:
  ```
  npm run build
+ deploy the files in the `dist` folder
  ```
- and deploy the files in the ```dist``` folder
  
-Auto-deploy to GH-Pages
+Auto-deploy to GH-Pages:
   ```
  npm run deploy
  ```
