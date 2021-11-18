@@ -3,16 +3,18 @@
 # Leaderboard
 
 > Build a Leaderboard JavaScript application
->
+
+![leaderboard-app](https://user-images.githubusercontent.com/49812651/142466531-1264dd11-2d66-4caa-80f9-8a27ab48f950.png)
 
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved using External API.
 
-<!-- ## [Live Project](#) -->
+### [Live Project](https://eapenzacharias.github.io/Leaderboard/)
 
 ## Built With
 
-- JavaScript, HTML, CSS
+- JavaScript, HTML, SCSS
 - Webpack
+- Bootstrap
 
 ## Getting Started
 

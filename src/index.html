@@ -9,41 +9,60 @@
   <body>
     <div class="container">
       <div class="row">
-        <h1 class="display-4">Leaderboard</h1>
-        <div class="sub-div col-lg-6">
-          <div class="row">
-            <div class="col-9">
-              <h2 class="h3">Recent Scores</h2>
+        <div class="col-12">
+          <div class="header inside-div">
+            <h1 class="display-4">Leaderboard</h1>
+          </div>
+        </div>
+        <div class="sub-div col-lg-8">
+          <div class="inside-div">
+            <div class="row">
+              <div class="col-9">
+                <h2 class="h3">Recent Scores</h2>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  id="refresh-btn"
+                  class="btn btn-light btn-sm"
+                  data-toggle="button"
+                >
+                  Refresh
+                </button>
+              </div>
             </div>
-            <div class="col-3">
-              <button
-                type="button"
-                id="refresh-btn"
-                class="btn btn-dark btn-sm"
-                data-toggle="button"
+            <table class="table table-striped table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Score</th>
+                </tr>
+              </thead>
+              <tbody id="scores-data">
+                <tr>
+                  <th colspan="3">No Data</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="sub-div col-lg-4">
+          <div class="inside-div">
+            <h2 class="h3">Add Your Scores</h2>
+            <div id="form-div"></div>
+          </div>
+          <div class="inside-div info-box">
+            <div>
+              Crafted by
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/eapenzacharias"
+                >@eapenzacharias</a
               >
-                Refresh
-              </button>
             </div>
           </div>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Score</th>
-              </tr>
-            </thead>
-            <tbody id="scores-data">
-              <tr>
-                <th colspan="3">No Data</th>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="sub-div col-lg-6">
-          <h2 class="h3">Add Your Scores</h2>
-          <div id="form-div"></div>
         </div>
       </div>
     </div>
