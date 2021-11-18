@@ -1,17 +1,50 @@
+$bs-table-bg: #282828;
+$--bs-table-bg: #282828;
+
 body {
+  background-color: #1d1d1d;
+  color: #f8f9fa;
+
   .container {
     padding-top: 5%;
 
     h1 {
-      margin-bottom: 50px;
+      margin-bottom: 5rem;
     }
 
     h2 {
-      padding-bottom: 25px;
+      padding-bottom: 2.5rem;
     }
 
     .sub-div {
-      padding: 0 35px;
+      padding: 1rem;
+    }
+    .table-dark {
+      --bs-table-bg: #252525;
+      --bs-table-striped-bg: #313131;
+      --bs-table-striped-color: #fff;
+      --bs-table-active-bg: #414141;
+      --bs-table-active-color: #fff;
+      --bs-table-hover-bg: #383838;
+      --bs-table-hover-color: #fff;
+    }
+    .big-div {
+      color: #4e59fc;
+      padding: 2rem;
+      background-color: #ffffff08;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    .small-div {
+      color: #4e59fc;
+      padding: 2rem;
+      background-color: #ffffff08;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
   }
 }

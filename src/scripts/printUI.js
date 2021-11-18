@@ -36,7 +36,7 @@ const createForm = () => {
     <div class="input-group mb-3">
       <input type="number" class="form-control" placeholder="Score" id="score-field" required>
     </div>
-    <input type="button" class="btn btn-dark btn-sm" id="submit-btn" value="Submit">
+    <input type="button" class="btn btn-light btn-sm" id="submit-btn" value="Submit">
   </form>
   `;
   getElement('#form-div').innerHTML = form;
