@@ -1,0 +1,87 @@
+$bs-table-bg: #282828;
+$--bs-table-bg: #282828;
+
+body {
+  background-color: #1d1d1d;
+  color: #f8f9fa;
+
+  .container {
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      padding-bottom: 2.5rem;
+    }
+
+    .header {
+      margin: 3rem 0;
+      width: 100%;
+      color: #2ef58f;
+    }
+
+    .sub-div {
+      padding: 1rem;
+      color: #60b9fb;
+    }
+
+    .table-dark {
+      --bs-table-bg: #252525;
+      --bs-table-striped-bg: #313131;
+      --bs-table-striped-color: #fff;
+      --bs-table-active-bg: #414141;
+      --bs-table-active-color: #fff;
+      --bs-table-hover-bg: #383838;
+      --bs-table-hover-color: #fff;
+    }
+
+    .btn-light {
+      color: #005b9e;
+    }
+
+    .inside-div {
+      padding: 2rem;
+      background-color: #252525;
+      border-radius: 1rem;
+      box-shadow:
+        rgba(0, 0, 0, 0.09) 0 2px 1px,
+        rgba(0, 0, 0, 0.09) 0 4px 2px,
+        rgba(0, 0, 0, 0.09) 0 8px 4px,
+        rgba(0, 0, 0, 0.09) 0 16px 8px,
+        rgba(0, 0, 0, 0.09) 0 32px 16px;
+    }
+
+    table tbody {
+      display: block;
+      max-height: 20rem;
+      overflow-y: scroll;
+      overflow-x: auto;
+    }
+
+    table thead,
+    table tbody tr {
+      word-wrap: break-word;
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    .info-box {
+      margin: 4rem 0;
+      color: #ed8464;
+      text-align: center;
+
+      a {
+        color: #ed8464;
+        text-decoration: none;
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      table tbody {
+        height: 30rem;
+      }
+    }
+  }
+}
