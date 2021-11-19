@@ -1,6 +1,7 @@
 import { addScores } from './gameManager.js';
 import { getLocal } from './localStorage.js';
 import { createElement, getElement } from './querySelectors.js';
+import sanitize from './sanitize.js';
 
 const recentScores = async (scores) => {
   scores = await scores;
@@ -50,7 +51,7 @@ const employForm = () => {
   const submitBtn = getElement('#submit-btn');
   submitBtn.addEventListener('click', async (e) => {
     if (user.value.length > 0 && score.value.length > 0) {
-      addScores(game, user.value, score.value);
+      addScores(game, sanitize(user.value), sanitize(score.value));
     }
     user.value = '';
     score.value = '';
